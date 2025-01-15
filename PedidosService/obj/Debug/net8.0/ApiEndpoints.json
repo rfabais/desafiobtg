@@ -1,0 +1,82 @@
+[
+  {
+    "ContainingType": "PedidosService.Controllers.PedidosController",
+    "Method": "CriarPedido",
+    "RelativePath": "api/Pedidos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pedido",
+        "Type": "PedidosService.Model.Pedido",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PedidosService.Controllers.PedidosController",
+    "Method": "ConsultarPedido",
+    "RelativePath": "api/Pedidos/{codigoPedido}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigoPedido",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PedidosService.Controllers.PedidosController",
+    "Method": "ObterValorTotal",
+    "RelativePath": "api/Pedidos/{codigoPedido}/valor-total",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigoPedido",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PedidosService.Controllers.PedidosController",
+    "Method": "ListarPedidosPorCliente",
+    "RelativePath": "api/Pedidos/cliente/{codigoCliente}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "codigoCliente",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PedidosService.Controllers.RabbitMqController",
+    "Method": "PublicarMensagem",
+    "RelativePath": "api/RabbitMq/publicar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mensagem",
+        "Type": "PedidosService.Model.Pedido",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
